@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <header>
+        <h1>天気予報アプリ</h1>
+        <label for="citySelector">都市を選択：</label>
+        <select id="citySelector">
+            <option value="tokyo">東京</option>
+            <option value="osaka">大阪</option>
+            <option value="nagoya">名古屋</option>
+        </select>
+    </header>
+
+    <main>
+        <section id="weather">
+            <h2 id="location">都市名</h2>
+            <div class="weather-container">
+                <div class="weather-day">
+                    <p class="date">日付</p>
+                    <img class="weatherImg" src="" alt="天気アイコン">
+                    <p class="tempMin">最低気温: --</p>
+                    <p class="tempMax">最高気温: --</p>
+                </div>
+                <div class="weather-day">
+                    <p class="date">日付</p>
+                    <img class="weatherImg" src="" alt="天気アイコン">
+                    <p class="tempMin">最低気温: --</p>
+                    <p class="tempMax">最高気温: --</p>
+                </div>
+                <div class="weather-day">
+                    <p class="date">日付</p>
+                    <img class="weatherImg" src="" alt="天気アイコン">
+                    <p class="tempMin">最低気温: --</p>
+                    <p class="tempMax">最高気温: --</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="weather.js"></script>
+</body>
+</html>
