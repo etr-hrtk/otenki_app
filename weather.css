@@ -1,0 +1,108 @@
+/* 全体のスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #87cefa, #ffffff);
+  color: #333;
+}
+
+header {
+  background-color: #4682b4;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header label {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+header select {
+  font-size: 1rem;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* メインコンテンツ */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#weather {
+  text-align: center;
+  background: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#location {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2f4f4f;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.weather-day {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-day p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4682b4;
+}
+
+.weatherImg {
+  display: block;
+  margin: 0.5rem auto;
+  width: 60px;
+  height: 60px;
+}
+
+.tempMin {
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.tempMax {
+  color: #dc143c;
+  font-weight: bold;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+  .weather-container {
+      flex-direction: column;
+  }
+
+  .weather-day {
+      width: 100%;
+  }
+}
